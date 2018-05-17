@@ -1,8 +1,3 @@
-public
-def divisible_by?(divisor)
-  (self % divisor).zero?
-end
-
 def raindrops_convert(number)
   rules = {
     3 => 'Pling',
@@ -10,8 +5,8 @@ def raindrops_convert(number)
     7 => 'Plong'
   }
 
-  result_arr = rules.map do |num, string|
-    number.divisible_by?(num) ? '' + string : ''
+  result_arr = rules.map do |factor, string|
+    (number % factor).zero? ? '' + string : ''
   end
   converted_string = result_arr.join('')
   converted_string.empty? ? number : converted_string

@@ -1,19 +1,5 @@
 require 'raindrops_convert'
 
-describe '#divisible_by?' do
-  it 'returns true if the number is divisiable by the divisor' do
-    expect(6.divisible_by?(3)).to eq(true)
-  end
-
-  it 'returns false if the number is not divisiable by the divisor' do
-    expect(5.divisible_by?(3)).to eq(false)
-  end
-
-  it 'returns true if the number is 0' do
-    expect(0.divisible_by?(5)).to eq(true)
-  end
-end
-
 describe '#raindrops_convert' do
   it 'returns "Pling" if the number has a factor of 3' do
     expect(raindrops_convert(3)).to eq('Pling')
@@ -45,5 +31,9 @@ describe '#raindrops_convert' do
 
   it 'returns 1 if the number does not have a factor of 3,5 or 7' do
     expect(raindrops_convert(1)).to eq(1)
+  end
+
+  it 'returns "PlingPlangPlong" if the number is 0' do
+    expect(raindrops_convert(0)).to eq('PlingPlangPlong')
   end
 end
