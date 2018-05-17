@@ -18,10 +18,13 @@ Testing: RSpec
 
 ## My Approach
 - Followed TDD
-- I started with listing all the possible situations of the factors, 3, 5, 7, 15, 21, 35, 105. and realised the first thing I need to check is if the number is divisible by any of these factors. I definied a method just check if the number is divisible_by any of the factors.
+- I started with listing all the possible situations of the factors, 3, 5, 7, 15, 21, 35, 105. and decided the first step is to check is if the number is divisible by any of these factors. I defined a method divisible_by? to check if the number is divisible_by any of the factors.
+- Created a method raindrops_convert converts the number into the correct string.
 - If the number meets any of the statement as above, I need someway to tell the number which is the string needs to be returned, listing all the if statements don't look nice and also not efficient, so I used hash to store the rules and can look up from it.
-- Then used map to iterate the hash and get the array with all the strings after checking if the number is divisible by each factor, and join the array into a string in the end.
+- Then used method map to iterate the hash and get the array with all the strings after checking if the number is divisible by each factor, and join the array into a string in the end.
 - The last step is checking if the array is empty or not, if so, it means the number is not divisible by any of the factors, so it needs to return the original number.
+- Refactor
+- The whole approach is trying to avoid using side effect to change original value and make sure everything is tested properly.
 
 ![screen shot 2018-05-17 at 16 48 22](https://user-images.githubusercontent.com/33848023/40188682-66bf8c3a-59f2-11e8-8ea0-804a4ee6e19a.png)
 ![screen shot 2018-05-17 at 16 47 46](https://user-images.githubusercontent.com/33848023/40188686-68e6e47c-59f2-11e8-9121-76414b7e52e5.png)
