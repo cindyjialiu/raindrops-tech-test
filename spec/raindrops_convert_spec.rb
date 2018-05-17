@@ -8,4 +8,8 @@ describe '#divisible_by?' do
   it 'returns false if the number is not divisiable by the divisor' do
     expect(5.divisible_by?(3)).to eq(false)
   end
+
+  it 'returns true if the number is 0' do
+    expect(0.divisible_by?(5)).to eq(true)
+  end
 end
