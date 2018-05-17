@@ -16,11 +16,12 @@ Language: Ruby
 Testing: RSpec
 ## My Approach
 - I started with listing all the possible situations of the factors, 3, 5, 7, 15, 21, 35, 105. and realised the first thing I need to check is if the number is divisible by any of these factors.
-- If the number meets any of the statement as above, I need someway to tell the number which is the string needs to be returned, so I used hash to store the rules.
-- Used map to iterate the hash and get an array with all the strings after checking if the number is divisible by each factor, and join the array in the end.
-- The last step is checking if the array is empty or now, if so, it means the number is not divisible by any of the factors, so it needs to return the original number.
-![approach1](https://user-images.githubusercontent.com/33848023/40188245-6aae0c1e-59f1-11e8-9141-2163486ea905.jpg)
-![approach2](https://user-images.githubusercontent.com/33848023/40188253-7079d556-59f1-11e8-9f56-dd538a7be99a.jpg)
+- If the number meets any of the statement as above, I need someway to tell the number which is the string needs to be returned, so I used hash to store the rules and can look up from it.
+- Then used map to iterate the hash and get the array with all the strings after checking if the number is divisible by each factor, and join the array into a string in the end.
+- The last step is checking if the array is empty or not, if so, it means the number is not divisible by any of the factors, so it needs to return the original number.
+![screen shot 2018-05-17 at 16 48 22](https://user-images.githubusercontent.com/33848023/40188682-66bf8c3a-59f2-11e8-8ea0-804a4ee6e19a.png)
+![screen shot 2018-05-17 at 16 47 46](https://user-images.githubusercontent.com/33848023/40188686-68e6e47c-59f2-11e8-9121-76414b7e52e5.png)
+
 ## Setup
 ```bash
 git clone to you location machine
@@ -49,7 +50,7 @@ cd raindrops-tech-test
 => 11
 ```
 ## How to test it
-```
-rspec
+```bash
+$run rspec
 ```
 <img width="496" alt="screen shot 2018-05-17 at 16 44 25" src="https://user-images.githubusercontent.com/33848023/40188324-9586e00a-59f1-11e8-91fd-5b078e9691a2.png">
