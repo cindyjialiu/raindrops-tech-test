@@ -17,8 +17,9 @@ Language: Ruby
 Testing: RSpec
 
 ## My Approach
-- I started with listing all the possible situations of the factors, 3, 5, 7, 15, 21, 35, 105. and realised the first thing I need to check is if the number is divisible by any of these factors.
-- If the number meets any of the statement as above, I need someway to tell the number which is the string needs to be returned, so I used hash to store the rules and can look up from it.
+- Followed TDD
+- I started with listing all the possible situations of the factors, 3, 5, 7, 15, 21, 35, 105. and realised the first thing I need to check is if the number is divisible by any of these factors. I definied a method just check if the number is divisible_by any of the factors.
+- If the number meets any of the statement as above, I need someway to tell the number which is the string needs to be returned, listing all the if statements don't look nice and also not efficient, so I used hash to store the rules and can look up from it.
 - Then used map to iterate the hash and get the array with all the strings after checking if the number is divisible by each factor, and join the array into a string in the end.
 - The last step is checking if the array is empty or not, if so, it means the number is not divisible by any of the factors, so it needs to return the original number.
 
