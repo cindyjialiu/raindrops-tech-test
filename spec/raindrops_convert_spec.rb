@@ -27,15 +27,15 @@ describe '#raindrops_convert' do
     expect(raindrops_convert(7)).to eq('Plong')
   end
 
-  it 'returns "Plong" if the number has a factor of 3 and 5' do
+  it 'returns "PlingPlang" if the number has a factor of 3 and 5' do
     expect(raindrops_convert(15)).to eq('PlingPlang')
   end
 
-  it 'returns "Plong" if the number has a factor of 3 and 7' do
+  it 'returns "PlingPlong" if the number has a factor of 3 and 7' do
     expect(raindrops_convert(21)).to eq('PlingPlong')
   end
 
-  it 'returns "Plong" if the number has a factor of 5 and 7' do
+  it 'returns "PlangPlong" if the number has a factor of 5 and 7' do
     expect(raindrops_convert(35)).to eq('PlangPlong')
   end
 end
