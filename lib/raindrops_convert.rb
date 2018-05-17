@@ -1,4 +1,4 @@
 public
 def divisible_by?(divisor)
-  true
+  (self % divisor).zero?
 end
