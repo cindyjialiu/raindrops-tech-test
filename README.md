@@ -11,9 +11,11 @@ Examples:
 - 28's factors are 1, 2, 4, 7, 14 and 28: this would be a simple 'Plong'
 - 30's factors are 1, 2, 3, 5, 6, 10, 15, 30: this would be a 'PlingPlang'
 - 34 has four factors: 1, 2, 17, and 34: this would be '34'
+
 ## Technology Used
 Language: Ruby
 Testing: RSpec
+
 ## My Approach
 - I started with listing all the possible situations of the factors, 3, 5, 7, 15, 21, 35, 105. and realised the first thing I need to check is if the number is divisible by any of these factors.
 - If the number meets any of the statement as above, I need someway to tell the number which is the string needs to be returned, so I used hash to store the rules and can look up from it.
@@ -25,8 +27,8 @@ Testing: RSpec
 
 ## Setup
 ```bash
-git clone to you location machine
-run bundle install to install all the dependencies in Gemfile
+git clone git@github.com:cindyjialiu/raindrops-tech-test.git
+$run bundle install to install all the dependencies in Gemfile
 cd raindrops-tech-test
 ```
 ## How to run it
@@ -50,7 +52,7 @@ cd raindrops-tech-test
 [11] pry(main)> raindrops_convert(11)
 => 11
 ```
-## How to test it
+## How to run the tests
 ```bash
 $run rspec
 ```
