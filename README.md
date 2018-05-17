@@ -14,7 +14,9 @@ Examples:
 ## Technology Used
 Language: Ruby
 Testing: RSpec
-## Approach
+## My Approach
+- I started with listing all the possible situations of the factors, 3, 5, 7, 15, 21, 35, 105. and realised the first thing I need to check is if the number is divisible by any of these factors.
+- If the number meets any of the statement as above, I need someway to tell the number which is the string needs to be returned, so I used hash to store the rules.
 ## Setup
 ```bash
 git clone to you location machine
