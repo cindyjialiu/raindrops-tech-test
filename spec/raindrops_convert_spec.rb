@@ -16,10 +16,10 @@ end
 
 describe '#raindrops_convert' do
   it 'returns "Pling" if the number has a factor of 3' do
-    expect(raindrops_convert(3)).to eq("Pling")
+    expect(raindrops_convert(3)).to eq('Pling')
   end
 
   it 'returns "Pling" if the number has a factor of 3' do
-    expect(raindrops_convert(5)).to eq("Plang")
+    expect(raindrops_convert(5)).to eq('Plang')
   end
 end

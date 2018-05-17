@@ -4,5 +4,6 @@ def divisible_by?(divisor)
 end
 
 def raindrops_convert(n)
-  'Pling'
+  return 'Pling' if n.divisible_by?(3)
+  return 'Plang' if n.divisible_by?(5)
 end
