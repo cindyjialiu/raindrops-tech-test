@@ -5,7 +5,7 @@ def raindrops_convert(number)
     7 => 'Plong'
   }
   result_arr = rules.map do |factor, string|
-    (number % factor).zero? ? '' + string : ''
+    (number % factor).zero? ? string : ''
   end
   converted_string = result_arr.join('')
   converted_string.empty? ? number : converted_string
