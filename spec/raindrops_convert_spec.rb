@@ -13,3 +13,9 @@ describe '#divisible_by?' do
     expect(0.divisible_by?(5)).to eq(true)
   end
 end
+
+describe '#raindrops_convert' do
+  it 'returns "Pling" if the number has a factor of 3' do
+    expect(raindrops_convert(3)).to eq("Pling")
+  end
+end
