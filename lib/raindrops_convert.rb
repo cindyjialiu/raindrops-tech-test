@@ -4,7 +4,6 @@ def raindrops_convert(number)
     5 => 'Plang',
     7 => 'Plong'
   }
-
   result_arr = rules.map do |factor, string|
     (number % factor).zero? ? '' + string : ''
   end

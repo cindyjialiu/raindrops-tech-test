@@ -19,6 +19,7 @@ Testing: RSpec
 - If the number meets any of the statement as above, I need someway to tell the number which is the string needs to be returned, so I used hash to store the rules and can look up from it.
 - Then used map to iterate the hash and get the array with all the strings after checking if the number is divisible by each factor, and join the array into a string in the end.
 - The last step is checking if the array is empty or not, if so, it means the number is not divisible by any of the factors, so it needs to return the original number.
+
 ![screen shot 2018-05-17 at 16 48 22](https://user-images.githubusercontent.com/33848023/40188682-66bf8c3a-59f2-11e8-8ea0-804a4ee6e19a.png)
 ![screen shot 2018-05-17 at 16 47 46](https://user-images.githubusercontent.com/33848023/40188686-68e6e47c-59f2-11e8-9121-76414b7e52e5.png)
 
